@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="HelloWorld">
+        <s:complexType />
+      </s:element>
+      <s:element name="HelloWorldResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="HelloWorldResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CheckValid">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="macCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="createdDate" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="code" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ip" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CheckValidResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CheckValidResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CheckValid2">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="macCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="createdDate" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="code" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ip" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CheckValid2Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CheckValid2Result" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetRegisterCode">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="macCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="createdDate" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetRegisterCodeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetRegisterCodeResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCheckCodeSize">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetCheckCodeSizeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetCheckCodeSizeResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UsedStats">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userip" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UsedStatsResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="UpdateDownloadTimes">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pid" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateDownloadTimesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="UpdateDownloadTimesResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="HelloWorldSoapIn">
+    <wsdl:part name="parameters" element="tns:HelloWorld" />
+  </wsdl:message>
+  <wsdl:message name="HelloWorldSoapOut">
+    <wsdl:part name="parameters" element="tns:HelloWorldResponse" />
+  </wsdl:message>
+  <wsdl:message name="CheckValidSoapIn">
+    <wsdl:part name="parameters" element="tns:CheckValid" />
+  </wsdl:message>
+  <wsdl:message name="CheckValidSoapOut">
+    <wsdl:part name="parameters" element="tns:CheckValidResponse" />
+  </wsdl:message>
+  <wsdl:message name="CheckValid2SoapIn">
+    <wsdl:part name="parameters" element="tns:CheckValid2" />
+  </wsdl:message>
+  <wsdl:message name="CheckValid2SoapOut">
+    <wsdl:part name="parameters" element="tns:CheckValid2Response" />
+  </wsdl:message>
+  <wsdl:message name="GetRegisterCodeSoapIn">
+    <wsdl:part name="parameters" element="tns:GetRegisterCode" />
+  </wsdl:message>
+  <wsdl:message name="GetRegisterCodeSoapOut">
+    <wsdl:part name="parameters" element="tns:GetRegisterCodeResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetCheckCodeSizeSoapIn">
+    <wsdl:part name="parameters" element="tns:GetCheckCodeSize" />
+  </wsdl:message>
+  <wsdl:message name="GetCheckCodeSizeSoapOut">
+    <wsdl:part name="parameters" element="tns:GetCheckCodeSizeResponse" />
+  </wsdl:message>
+  <wsdl:message name="UsedStatsSoapIn">
+    <wsdl:part name="parameters" element="tns:UsedStats" />
+  </wsdl:message>
+  <wsdl:message name="UsedStatsSoapOut">
+    <wsdl:part name="parameters" element="tns:UsedStatsResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateDownloadTimesSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateDownloadTimes" />
+  </wsdl:message>
+  <wsdl:message name="UpdateDownloadTimesSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateDownloadTimesResponse" />
+  </wsdl:message>
+  <wsdl:portType name="HDJSORegisterSoap">
+    <wsdl:operation name="HelloWorld">
+      <wsdl:input message="tns:HelloWorldSoapIn" />
+      <wsdl:output message="tns:HelloWorldSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CheckValid">
+      <wsdl:input message="tns:CheckValidSoapIn" />
+      <wsdl:output message="tns:CheckValidSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CheckValid2">
+      <wsdl:input message="tns:CheckValid2SoapIn" />
+      <wsdl:output message="tns:CheckValid2SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetRegisterCode">
+      <wsdl:input message="tns:GetRegisterCodeSoapIn" />
+      <wsdl:output message="tns:GetRegisterCodeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCheckCodeSize">
+      <wsdl:input message="tns:GetCheckCodeSizeSoapIn" />
+      <wsdl:output message="tns:GetCheckCodeSizeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UsedStats">
+      <wsdl:input message="tns:UsedStatsSoapIn" />
+      <wsdl:output message="tns:UsedStatsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateDownloadTimes">
+      <wsdl:input message="tns:UpdateDownloadTimesSoapIn" />
+      <wsdl:output message="tns:UpdateDownloadTimesSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="HDJSORegisterSoap" type="tns:HDJSORegisterSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="HelloWorld">
+      <soap:operation soapAction="http://tempuri.org/HelloWorld" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckValid">
+      <soap:operation soapAction="http://tempuri.org/CheckValid" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckValid2">
+      <soap:operation soapAction="http://tempuri.org/CheckValid2" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRegisterCode">
+      <soap:operation soapAction="http://tempuri.org/GetRegisterCode" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCheckCodeSize">
+      <soap:operation soapAction="http://tempuri.org/GetCheckCodeSize" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UsedStats">
+      <soap:operation soapAction="http://tempuri.org/UsedStats" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateDownloadTimes">
+      <soap:operation soapAction="http://tempuri.org/UpdateDownloadTimes" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="HDJSORegisterSoap12" type="tns:HDJSORegisterSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="HelloWorld">
+      <soap12:operation soapAction="http://tempuri.org/HelloWorld" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckValid">
+      <soap12:operation soapAction="http://tempuri.org/CheckValid" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckValid2">
+      <soap12:operation soapAction="http://tempuri.org/CheckValid2" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRegisterCode">
+      <soap12:operation soapAction="http://tempuri.org/GetRegisterCode" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCheckCodeSize">
+      <soap12:operation soapAction="http://tempuri.org/GetCheckCodeSize" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UsedStats">
+      <soap12:operation soapAction="http://tempuri.org/UsedStats" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateDownloadTimes">
+      <soap12:operation soapAction="http://tempuri.org/UpdateDownloadTimes" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="HDJSORegister">
+    <wsdl:port name="HDJSORegisterSoap" binding="tns:HDJSORegisterSoap">
+      <soap:address location="http://localhost:8080/WebService/hdjso.asmx" />
+    </wsdl:port>
+    <wsdl:port name="HDJSORegisterSoap12" binding="tns:HDJSORegisterSoap12">
+      <soap12:address location="http://localhost:8080/WebService/hdjso.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

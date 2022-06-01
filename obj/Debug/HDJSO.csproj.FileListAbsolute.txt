@@ -1,0 +1,10 @@
+D:\Workspace\Dotnet\HDJSO\bin\Debug\hdjso.exe.config
+D:\Workspace\Dotnet\HDJSO\bin\Debug\hdjso.exe
+D:\Workspace\Dotnet\HDJSO\bin\Debug\hdjso.pdb
+D:\Workspace\Dotnet\HDJSO\obj\Debug\HDJSO.csprojResolveAssemblyReference.cache
+D:\Workspace\Dotnet\HDJSO\obj\Debug\HDS.JSObfuscator.MainForm.resources
+D:\Workspace\Dotnet\HDJSO\obj\Debug\HDS.JSObfuscator.Properties.Resources.resources
+D:\Workspace\Dotnet\HDJSO\obj\Debug\HDS.JSObfuscator.TaskbarNotifier.resources
+D:\Workspace\Dotnet\HDJSO\obj\Debug\HDJSO.csproj.GenerateResource.Cache
+D:\Workspace\Dotnet\HDJSO\obj\Debug\hdjso.exe
+D:\Workspace\Dotnet\HDJSO\obj\Debug\hdjso.pdb
